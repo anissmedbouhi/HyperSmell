@@ -1,0 +1,58 @@
+method: grid
+metric:
+  goal: minimize
+  name: loss
+parameters:
+  representation_name:
+    value: 'molformer'
+  depth:
+    value: None
+  batch_size:
+    value: 4982
+  num_epochs:
+    value: 100000
+  latent_dim:
+    value: 2
+  lr:
+    values:
+      - 0.1
+      - 0.01
+      - 0.001
+      - 0.05
+  base_dir:
+#    value: '../../../T5 EVO/alignment_olfaction_datasets/curated_datasets/'
+    value: '/local_storage/datasets/farzaneh/alignment_olfaction_datasets/curated_datasets/'
+  dataset_name:
+    value: gslf
+  seed:
+    value: 2024
+
+  temperature:
+    values:
+     - 1
+     - 2
+     - 3
+     - 4
+     - 6
+     - 0.5
+     - 0.6
+  normalize:
+    value: True
+  optimizer:
+    value: 'poincare'
+  model_name:
+    value: 'contrastive'
+  latent_dist_fun:
+    value: 'poincare'
+  distance_method:
+    value: 'euclidean'
+  distr:
+    value: 'hypergaussian'
+  n_neighbors:
+    values:
+      - 10
+      - 20
+      - 25
+      - 30
+      - 40
+      - 50
