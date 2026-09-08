@@ -1,5 +1,5 @@
 # Information
-This is the Python code for the paper "Geometric organization of olfactory descriptor data in the Poincaré disk".
+This is the Python code for the paper "Geometric organization of olfactory descriptor data in the Poincaré disk" submitted to the journal Chemical Senses.
 
 The descriptor data is in the folder called *data*. The hyperbolic embeddings, obtained by running the Python file *train.py* with appropriate configurations, can be found in the folders *results_ChemicalSenses_experiments_Sagar* and *results_ChemicalSenses_experiments_GSLF*.
 
